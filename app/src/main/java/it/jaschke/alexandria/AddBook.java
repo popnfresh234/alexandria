@@ -202,7 +202,7 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
 
         String authors = data.getString(data.getColumnIndex(AlexandriaContract.AuthorEntry.AUTHOR));
 
-        //Only split if authers is not null
+        //Only split if authors is not null
         if (authors != null) {
             String[] authorsArr = authors.split(",");
             ((TextView) rootView.findViewById(R.id.authors)).setLines(authorsArr.length);
